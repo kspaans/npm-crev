@@ -1,0 +1,36 @@
+{
+  "private": false,
+  "version": "0.0.0",
+  "name": "crev",
+  "description": "NPM Code REView - CREV Frontend for NPM",
+  "author": "Kyle Spaans <kyle@spaans.com> (https://spaans.ca)",
+  "homepage": "https://github.com/kspaans/npm-crev.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kspaans/npm-crev.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "security",
+    "review"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "files": [
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/kspaans/npm-crev/issues"
+  },
+  "scripts": {
+    "lint:ec": "npx editorconfig-checker .",
+    "lint:js": "npx eslint .",
+    "lint:md": "npx remark --quiet --frail .",
+    "lint": "npx run-p lint:*"
+  },
+  "dependencies": {
+    "js-yaml": "^3.13.1"
+  }
+}
