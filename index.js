@@ -25,7 +25,7 @@ lines.forEach(l => {
   } else if (l === '') {
     proofs.push(safeLoad(unarmoured.join('\n')))
     unarmoured = []
-    includ_flag = false
+    include_flag = false
   }
   if (include_flag && !in_sig) {
     unarmoured.push(l)
